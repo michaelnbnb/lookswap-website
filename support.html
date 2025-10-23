@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - LookSwap.ai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .support-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        
+        .support-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .support-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.6;
+            display: none;
+        }
+        
+        .faq-answer.active {
+            display: block;
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <img src="images/logo.png" alt="LookSwap.ai" class="logo-nav">
+                    <h2>LookSwap.ai</h2>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+                <a href="index.html#download" class="nav-link">Download</a>
+                <div class="language-selector">
+                    <select id="languageSelect">
+                        <option value="en">English</option>
+                        <option value="zh-cn">简体中文</option>
+                        <option value="zh-tw">繁體中文</option>
+                        <option value="es">Español (México)</option>
+                        <option value="ja">日本語</option>
+                        <option value="hi">हिन्दी</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Support Content -->
+    <div class="support-container">
+        <div class="support-header">
+            <h1>Support Center</h1>
+            <p>Find answers to common questions and get help with LookSwap.ai</p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How does the AI virtual try-on work?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    LookSwap.ai uses advanced AI technology to analyze your photo and virtually apply different clothing items. Our AI considers body shape, lighting, and pose to create realistic try-on experiences.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is my photo data secure?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, we take privacy seriously. Your photos are processed securely and are not stored on our servers longer than necessary for processing. Please review our Privacy Policy for detailed information.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What devices are supported?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    LookSwap.ai is currently available for iOS devices. We support iPhone 8 and newer models running iOS 13.0 or later. Android support is coming soon!
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How can I get better results?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    For best results, use well-lit photos with clear visibility of your body. Stand in a neutral pose facing the camera. Avoid busy backgrounds and ensure the photo is high quality.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I save and share my styled photos?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely! You can save your styled photos to your device's photo library and share them directly to social media platforms or with friends through the app.
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Still Need Help?</h2>
+            <p>Our support team is here to assist you</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email Support</h3>
+                    <p>support@lookswap.ai</p>
+                    <p>Response within 24 hours</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>💬 Live Chat</h3>
+                    <p>Available in the app</p>
+                    <p>Monday - Friday, 9 AM - 6 PM PST</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📱 Social Media</h3>
+                    <p>Follow us for updates</p>
+                    <p>@LookSwapAI on all platforms</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="LookSwap.ai" class="logo-footer">
+                    <h3>LookSwap.ai</h3>
+                    <p>Your AI fashion stylist companion</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#download">Download</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="support.html">Support</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LookSwap.ai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('span:last-child');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                icon.textContent = '+';
+            } else {
+                // Close all other FAQs
+                document.querySelectorAll('.faq-answer.active').forEach(item => {
+                    item.classList.remove('active');
+                });
+                document.querySelectorAll('.faq-question span:last-child').forEach(item => {
+                    item.textContent = '+';
+                });
+                
+                // Open current FAQ
+                answer.classList.add('active');
+                icon.textContent = '-';
+            }
+        }
+    </script>
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
